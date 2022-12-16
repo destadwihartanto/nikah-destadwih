@@ -363,17 +363,44 @@
                                 <p class="fs-4 font-tree color-one mt-min15 ">Pukul 09.00 WIB</p>
                                 <p class="fs-4 font-tree color-one font-bold mt-min15 ">Alamat : Ds Pagu Kec. Wates Kab. Kediri</p>
                             </div>
-                            <div class="shadow px-2 py-2 bg-image-card rounded mt-5 width-maps-1 ">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959.263050364727!2d109.20567025541988!3d0.06487693243539362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x53389dc8854c15e0!2sWajok%20Hilir%20Store!5e0!3m2!1sid!2sid!4v1659782651050!5m2!1sid!2sid "
-                                    class="wh-maps " allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
-                            </div>
+                            
                             <div class="mt-5">
-                                <a class="btn btn-default font-two fw-bold mt-min15 px-4" href="undangan.html ">
+                                <!-- <a class="btn btn-default font-two fw-bold mt-min15 px-4" href="">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
                                     <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
                                     <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                                 </svg> Lokasi
-                                </a>
+                                </a> -->
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                </svg>Lokasi
+                            </button>
+                        </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-fullscreen">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Denah Lokasi</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- isi maps -->
+                                        <div class="shadow px-2 py-2 bg-image-card rounded mt-5 width-maps-1 ">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959.263050364727!2d109.20567025541988!3d0.06487693243539362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x53389dc8854c15e0!2sWajok%20Hilir%20Store!5e0!3m2!1sid!2sid!4v1659782651050!5m2!1sid!2sid "
+                                                class="wh-maps " allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                    </div>
+                                </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -389,7 +416,9 @@
             <div class="grid">
                 <div class="d-flex justify-content-center">
                     <div class="container">
-                        <div id="carouselExampleControls" class="carousel slide mt-5" data-bs-ride="carousel">
+                        
+                        <!-- <div id="carouselExampleControls" class="carousel slide mt-5" data-bs-ride="carousel">
+                            
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div class="grid">
@@ -421,7 +450,7 @@
                                     <span class="visually-hidden">Next</span>
                                 </button>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="owl-carousel owl-theme mt-5" id="sliderDonasi">
                             <div class="item">
                                 <div class="card shadow-campaign">
@@ -495,12 +524,21 @@
                                     <p class="fs-4 font-tree color-one font-bold mt-min15 ">Jl. Wajok Hilir Kec. Jongkat Kab. Mempawah Kalimantan Barat 78351</p>
                                 </div>
                             </div>
+                            <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+                                  <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg>
+                                <div>
+                                  An example alert with an icon
+                                </div>
+                              </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
     <section class="bg-default">
         <div class="container">
             <div class="row">
@@ -527,6 +565,63 @@
             <use xlink:href="#gentle-wave" x="48" y="7" fill="#2A4D1F" />
         </g>
     </svg>
+
+    <div class="container">
+        <div class="row mt-100">
+            <div class="col-12">
+                <div class="text-center">
+                    <p class="font-one font-size-55 color-one mt-100 mt-5" id="nasihat">Nasihat</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="d-flex justify-content-center">
+                    <div class="col-xl-8 col-lg-12">
+                        <div class="row mt-2">
+                            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active" data-bs-interval="10000">
+                                    <img src="assets/banner/maxresdefault (1).jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <h5>First slide label</h5>
+                                      <p>Some representative placeholder content for the first slide.</p>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="assets/banner/maxresdefault.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <h5>Second slide label</h5>
+                                      <p>Some representative placeholder content for the second slide.</p>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/banner/quotes-islami-tentang-cinta.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <h5>Third slide label</h5>
+                                      <p>Some representative placeholder content for the third slide.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BATAS Nasihat -->
     <div class="container" id="ucapan">
         <div class="row ">
             <div class="col-12 ">
@@ -597,6 +692,7 @@
             </div>
         </div>
     </div>
+
     <div class="mt-5">
         <svg class="waves " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " viewBox="0 24 150 28 " preserveAspectRatio="none " shape-rendering="auto ">
             <defs>
@@ -676,8 +772,9 @@
         </div>
     </div>
     <section>
-        <audio id="audio " autoplay loop="loop ">
-            <source src="music/music.mp3 " type="audio/mp3 ">
+        
+        <audio id="audio" autoplay loop="loop">
+            <source src="music.mp3" type="audio/mp3">
         </audio>
 
         <button id="playPauseBTN" class="btn btn-audio" onclick="playPause()">
@@ -687,7 +784,9 @@
                     <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
                 </svg>
             </label>
+            
         </button>
+        
 
         <script>
             var audio = document.getElementById('audio');

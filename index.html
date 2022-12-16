@@ -59,9 +59,9 @@
                 </div>
                 <section>
                     <audio id="audio" autoplay loop="loop">
-                        <source src="tes2.mp3" type="audio/mp3">
+                        <source src="music.mp3" type="audio/mp3">
                     </audio>
-
+            
                     <button id="playPauseBTN" class="btn btn-audio" onclick="playPause()">
                         <label for="click" class="label-box">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-play-circle icon-chatbox" viewBox="0 0 16 16">
@@ -70,12 +70,12 @@
                             </svg>
                         </label>
                     </button>
-
+            
                     <script>
                         var audio = document.getElementById('audio');
                         var playPauseBTN = document.getElementById('playPauseBTN');
                         var count = 0;
-
+            
                         function playPause() {
                             if (count == 0) {
                                 count = 1;
@@ -85,7 +85,7 @@
                                 audio.play();
                             }
                         }
-
+            
                         function stop() {
                             playPause()
                             audio.pause();
@@ -93,10 +93,7 @@
                         }
                     </script>
                 </section>
-            </main>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
-
-</html>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            </body>
+            
+            </html>
